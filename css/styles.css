@@ -1,0 +1,253 @@
+
+
+body {
+    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: #C0C0C0
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('http://cdn.dlron.us/assets/misc/5606/278920.gif') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    background-image: url("http://cdn.dlron.us/assets/misc/5606/278920.gif");
+}
+
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.container h1 {
+    background-color: #00008B;
+    color: white;
+    font-style: ;
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.container h2 {
+    background-color: #00008B;
+    color: white;
+}
+
+.featurette-divider {
+    margin: 30px 0;
+}
+
+.featurette {
+    overflow: hidden;
+    background-color: #00008B;
+    color: white;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+h3.featurette-heading {
+    text-align: center;
+}
+
+.name-email-list {
+    border: 1px solid black;
+    width: 100%;
+    height: 270px;
+    padding-left: 10px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.submit {
+    margin-bottom: 10px
+}
+.submit-results {
+    margin-bottom: 10px;
+}
+div.row {
+    background-color: #00008B;
+    color: white;
+}
+div.radio {
+    margin-left: 20px;
+}
+p.email {
+    margin: 0 0 20px 0;
+    padding-top: 0;
+}
+p.name {
+    margin: 0;
+}
+div.name-email-list {
+    background-color: white;
+    color: black;
+}
+.survey-results {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px; 
+    background-color: white;   
+}
+
+input {
+    color: black;
+}
+
+input [type=radio] {
+    margin-left: 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+div#contact.featurette {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+h2.featurette-heading {
+    padding-left: 15px;
+}
+
+p.lead {
+    padding-left: 15px;
+}
+h2.cruise-title {
+    border: 1px solid black;
+    background-color: #C0C0C0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    color: black;
+    text-align: center;
+}
+div.survey-results {
+    color: black;
+    padding-left: 10px;
+}
+
+.submit {
+    background-color: none;
+}
+
+.form-control {
+    width: 75%;
+}
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+
+    .cruise-ship {
+        margin-left: 60px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .cruise.ship {
+
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .cruise.ship {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    }.cruise-ship {
+       max-width: 100%;
+       margin-bottom: 10px;
+       margin-left: 50px;
+    }
+}

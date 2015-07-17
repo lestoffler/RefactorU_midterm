@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Bulldog 40th High School Reunion</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body onload=>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">UH HS Reunion Home</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Photos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Travel Information</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Full Width Image Header -->
+        <header class="header-image">
+            <div class="headline">
+                <div class="container">
+                    <h1>Class of 1976</h1>
+                    <h2>40th High School Reunion</h2>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <hr class="featurette-divider">
+            <!-- First Featurette -->
+            <div class="row">
+                <div class="form-container col-md-8">
+                    <h2 class="featurette-heading">Please Join Us In Celebrating
+                    <span class="text-muted">Our 40th High School Reunion</span>
+                    </h2>
+                    <p class="lead">RSVP by submitting your name and email. These will apear in a list to the right so your classmates may see who is planning to attend and contact you by email if needed.</p>
+                    <form name="form1" class="user-info" onSubmit="return checkName();">
+                        <div class="form-group">
+                            <label for="input-name">Full Name</label>
+                            <input type="text" name="email" class="form-control" id="input-name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-email">Email address</label>
+                            <input type="text" class="form-control" id="input-email">
+                        </div>
+                        <button type="submit" name="submit" value="Submit" class="btn btn-default submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="featurette-heading">Classmates Who Have RSVP'd</h3>
+                    <div class="name-email-list"></div>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            <!-- Second Featurette -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="featurette-heading">Please Complete This Short Survey
+                    <span class="text-muted">To Help In Planning This Exciting Event</span>
+                    </h2>
+                    <p class="lead">Please complete this short survey to help us plan a better high school reunion. Please choose one of the date options and one of the cruise options. The date and cruise with the most votes will be the winner!
+                    </p>
+                    <form class="survey-form">
+                        <div class="radio date" id="dates">
+                            <h3 class="survey-title">Please Choose One Date or Enter A New Date</h3>
+                            <div class="radio radio-date">
+                                <input type="radio" name="dateOptions" id="optionsRadios1" class="radio-button-date" value="Aug" checked="">
+                                <label for="optionsRadios1">August 25, 26 and 27, 2016</label>
+                            </div>
+                            <div class="radio radio-date">
+                                <input type="radio" name="dateOptions" id="optionsRadios2" class="radio-button-date" value="Sep">
+                                <label for="optionsRadios2">September 9, 10 and 11, 2016</label>
+                            </div>
+                            <div class="radio radio-date">
+                                <input type="radio" name="dateOptions" id="optionsRadios3" class="radio-button-date" value="Alt">
+                                <label for="optionsText1">Alternative Date</label>
+                            </div>
+                        </div>
+                        <div class="radio cruise" id="cruises">
+                            <h3 class="survey-title">Please Choose One Optional Class Cruise Destination</h3>
+                            <div class="radio radio-cruise">
+                                <input type="radio" name="cruiseOptions" id="optionsRadios4" class="radio-button-cruise" value="West" checked="">
+                                <label for="optionsRadios4">West Caribbean</label>
+                            </div>
+                            <div class="radio radio-cruise">
+                                <input type="radio" name="cruiseOptions" id="optionsRadios5" class="radio-button-cruise" value="East">
+                                <label for="optionsRadios5">East Caribbean</label>
+                            </div>
+                            <div class="radio radio-cruise">
+                                <input type="radio" name="cruiseOptions" id="optionsRadios6" class="radio-button-cruise" value="Alaskan">
+                                <label for="optionsRadios6">Alaskan</label>
+                            </div>
+                            <div class="radio radio-cruise">
+                                <input type="radio" name="cruiseOptions" id="optionsRadios7" class="radio-button-cruise" value="Hawaiian">
+                                <label for="optionsRadios7">Hawaiian</label>
+                            </div>
+                            <div class="radio radio-cruise">
+                                <input type="radio" name="cruiseOptions" id="optionsRadios8" class="radio-button-cruise" value="Alternative">
+                                <label for="optionsText2">Alternative Cruise Destination</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default submit-results">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="featurette-heading">Cruisin' Class Reunion</h3>
+                    <div class="survey-results">
+                        <h2 class="cruise-title">Alaskan Cruise 2011</h2>
+                        <div class="cruise-one">
+                            <p class="cruise-pics">
+                                <img class="cruise-ship" src="http://www.al-cruise.com/images/FrontPicture.jpg#Alaska%20curise%20243x198" width="" height="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <!-- Third Featurette -->
+            <div class="featurette" id="contact">
+                <h2 class="featurette-heading">Blast From the Past
+                <span class="text-muted">Photos of Years Gone By</span>
+                </h2>
+                <p class="lead">Thank you to all of you who submitted photos.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 photos">
+                    <img class="bottom-image" src="http://www.leesburgyellowjacketsfootball.com/sitebuilder/images/www.leesburgyellowjacketsfootball.com_1976_Leesburg_High_School_Junior_Varsity_Football_Team-635x337-453x232.jpg" width="391" height="232">
+                </div>
+                <div class="col-md-4 photos">
+                    <img class="bottom-image" src="http://www.oakparkhistory.com/1975-76/1975-1976-Stuco-01.jpg" width="391" height="232">
+                </div>
+                <div class="col-md-4 photos">
+                    <img class="bottom-image" src="https://marytreacy.files.wordpress.com/2011/06/homecoming-parade-1976.jpg" width="391" height="232">
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Contact Information: Daniel Stoffler     dstoff@earthlink.net</p>
+                        <p>Copyright &copy; University High Bulldogs 40th High School Reunion 2016</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
